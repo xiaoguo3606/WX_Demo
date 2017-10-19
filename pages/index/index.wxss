@@ -1,0 +1,64 @@
+/**index.wxss**/
+view{
+  font-family: "微软雅黑";
+  font-size: 14pt;
+}
+.container{
+  background: #eee;
+  padding-top: 20pt;
+  padding-bottom: 20pt;
+  height: 100%;
+}
+.title{
+  font-size: 20pt;
+  font-weight: bold;
+}
+.time_area{
+  height: 101pt;
+  background-color: #036;
+  width: 90%;
+  border-radius: 10pt;
+  color: #fff;
+  margin: 10pt 0;
+}
+.time_area>view{
+  height: 50pt;
+  line-height: 50pt;
+  text-indent: 4em;
+}
+
+.time view{
+  display: inline;
+}
+.baby_time{
+  border-top: 1px solid #fff;
+}
+.baby_time view{
+  display: inline;
+}
+
+
+button{
+  width: 90%;
+  font-size: 18pt;
+  color: #fff;
+  margin: 10pt 0 0;
+}
+button.begin{
+  background-color: #09bb07;
+}
+button.stop{
+  background-color: #e64340;
+}
+button.reset_time{
+  background-color: #576b95;
+}
+button.begin.disabled{
+  background-color:rgba(9, 204, 7, 0.3);
+}
+button.stop.disabled{
+  background-color:rgba(246, 67, 64, 0.3);
+}
+button.reset_time.disabled{
+  background-color:rgba(87, 108, 149, 0.3);
+}
