@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
 var app = getApp()
+var controlShowModal=0;
+
 Page({
   data:{
     time:'05:00'
@@ -41,6 +43,21 @@ Page({
         console.log('complete')
       }
     })
+  },
+  controlObjectEvent:function(){
+    
+    if(controlShowModal==0){
+      wx.showModal({
+        title: '说明',
+        content: '请选择技术上最重要的控制对象；若指标之间有因果关系，则宁可取作为因的指标为统计量；控制对象要明确，并为大家理解与同意；控制对象要能以数字来表示；控制对象要选择容易测定并对过程容易采取措施者。',
+        showCancel: false,
+        confirmText: '我知道了',
+        complete: function () {
+          controlShowModal++;
+        }
+      })
+    }
+    
   }
 })
 

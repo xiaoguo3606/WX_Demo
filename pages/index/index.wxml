@@ -1,20 +1,8 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="title">
-    一起数胎动
-  </view>
-  <view class="time_area">
-    <view class="time">
-      <text>计时：</text>
-      <view id="time" data-text="05:00">{{time}}</view>
-    </view>
-    <view class="baby_time">
-      <text>次数：</text>
-      <view id="baby_time">0</view>
-    </view>
-  </view>
-  <button class="begin" bindtap="begin" id="begin">开始数胎动</button>
-  <button class="stop" disabled>停止</button>
-  <button class="reset_time" disabled>重置</button>
+<view class='title'>X-R控制图数据输入</view>
+
+<form>
+  <text>控制对象（统计量）</text>
   
-</view>
+  <input type='text' placeholder='请输入文字' bindfocus='controlObjectEvent' id='controlObjectInput'></input>
+</form>
